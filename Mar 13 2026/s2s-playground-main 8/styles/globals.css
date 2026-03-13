@@ -1,0 +1,82 @@
+@import "tailwindcss";
+
+:root {
+  /* Razorpay Curlec Enhanced Theme */
+  --background: #0a0e27;
+  /* Deep Navy Blue */
+  --foreground: #f1f5f9;
+  /* Bright Slate */
+
+  --sidebar-bg: #0f1629;
+  --header-bg: #0f1629e6;
+  /* Transparent for backdrop blur */
+  --card-bg: #1a2332;
+  /* Elevated Card Background */
+
+  --primary: #3b9fd9;
+  /* Vibrant Razorpay Blue - matches logo */
+  --primary-hover: #5db3e5;
+  /* Lighter on hover */
+  --accent: #2d7ab8;
+  /* Rich Blue Accent */
+  --accent-light: #4ea8db;
+  /* Light accent for highlights */
+
+  --border: #1e2a3d;
+  /* Subtle border */
+  --border-light: #2a3a52;
+  /* Lighter border for emphasis */
+  --input-bg: #1a2332;
+  /* Matches card background */
+
+  /* Gradient colors */
+  --gradient-start: #0a0e27;
+  --gradient-mid: #1a2847;
+  --gradient-end: #0d1424;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-sidebar: var(--sidebar-bg);
+  --color-header: var(--header-bg);
+  --color-card: var(--card-bg);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-accent: var(--accent);
+  --color-accent-light: var(--accent-light);
+  --color-border: var(--border);
+  --color-border-light: var(--border-light);
+  --color-input: var(--input-bg);
+  --color-gradient-start: var(--gradient-start);
+  --color-gradient-mid: var(--gradient-mid);
+  --color-gradient-end: var(--gradient-end);
+
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar for Webkit */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sidebar-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #334155;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #475569;
+}
